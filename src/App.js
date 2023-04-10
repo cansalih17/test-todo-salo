@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {AiOutlinePlus} from 'react-icons/ai'
 import Todo from './Todo';
 import {db} from './firebase'
-import {query, collection ,QuerySnapshot, onSnapshot, updateDoc, doc, addDoc, deleteDoc} from 'firebase/firestore'
+import {query, collection , onSnapshot, updateDoc, doc, addDoc, deleteDoc} from 'firebase/firestore'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
