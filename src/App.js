@@ -39,7 +39,7 @@ function App() {
   //create
   const createTodo = async (e) => {
     e.preventDefault(e)
-    if (input == ''){
+    if (input === ''){
       notify()
       return
     }
