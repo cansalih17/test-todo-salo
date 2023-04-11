@@ -38,7 +38,7 @@ function App() {
 
   //create
   const createTodo = async (e) => {
-    e.preventDefault(e)
+    e.preventDefault()
     if (input === ''){
       notify()
       return
@@ -73,8 +73,8 @@ function App() {
         <ul>
           
           {
-            todos.map((todo,index) => (
-              <Todo key={index} todo={todo} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
+            todos.map((todo) => (
+              <Todo key={todo.id} todo={todo} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
             ))
           }
         </ul>
@@ -90,7 +90,6 @@ function App() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="light"
         />
     </div>
   );
